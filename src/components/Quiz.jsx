@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ecgList } from './quizData.js';
 import ImageGraph from './ImageGraph.jsx';
+import QuizOption from './quizOption.jsx';
 
 
 export default function Quiz() {
@@ -8,17 +9,23 @@ export default function Quiz() {
   const [seed, setSeed] = useState(1);
   let choices = [0, 1, 2];
 
+  const [state, setState] = useState(0);
+
   const hasNext = ecgIndex < ecgList.length - 1;
   const hasPrevious = ecgIndex > 0;
 
-  let offset = hasNext ? 0 : -10;
+  let offset = ecgIndex + 5 < ecgList.length - 1 ? 0 : -10;
   choices = [ecgIndex, ecgIndex + offset + 1, ecgIndex + offset + 2]
 
-  shuffleArray(choices);
+  let wrongAnswers = [{}];
+
+  
 
   const resetGraph = () => {
     setSeed(Math.random());
   };
+
+  let ecg = ecgList[ecgIndex];
 
   function shuffleArray(array) {
     let currentIndex = array.length;
@@ -32,31 +39,52 @@ export default function Quiz() {
     }
   }
 
-  function handleNextEcgClick() {
-    resetGraph();
+  let rightAnswer = "";
 
-    let target;
-    target = hasNext ? ecgIndex + 1 : 0;
-
-    // let offset = hasNext ? 0 : -10;
-    // choices = [target, target + offset + 1, target + offset + 2]
-
-    setEcgIndex(target);
+  if (state == 1) {
+    rightAnswer = "Oikea vastaus: " + ecg.name;
   }
 
-  function handlePreviousEcgClick() {
-    resetGraph();
+  function handleNextEcgClick(selected) {
 
-    let target;
-    target = hasPrevious ? ecgIndex - 1 : ecgList.length - 1;
-    setEcgIndex(target);
+    // if (selected == 0) {
+    //   wrongAnswers.push(ecgList[ecgIndex]);
+    // }
+
+    if (state == 0) {
+      setState(1);
+    }
+    else {
+      shuffleArray(choices);
+      resetGraph();
+      let target;
+      target = hasNext ? ecgIndex + 1 : 0;
+      setState(0);
+      setEcgIndex(target);
+    }
+
+
   }
+
+  // function handlePreviousEcgClick() {
+  //   resetGraph();
+
+  //   let target;
+  //   target = hasPrevious ? ecgIndex - 1 : ecgList.length - 1;
+  //   setEcgIndex(target);
+  // }
 
   useEffect(() => {
     shuffleArray(ecgList);
   }, []);
 
-  let ecg = ecgList[ecgIndex];
+  const listItems = wrongAnswers.map(entry =>
+    <li>
+      <p>
+        {entry.name}
+      </p>
+    </li>
+  );
 
   return (
     <>
@@ -75,32 +103,23 @@ export default function Quiz() {
         
         <p/>
 
+        <p>{rightAnswer}</p>
+
         <p/>
       </div>
       
       <p/>
 
-      <button onClick={handleNextEcgClick} class="button">
-        {ecgList[choices[0]].name}
-      </button>
-
-      <p/>
-
-      <button onClick={handleNextEcgClick} class="button">
-        {ecgList[choices[1]].name}
-      </button>
-
-      <p/>
       
-      <button onClick={handleNextEcgClick} class="button">
-        {ecgList[choices[2]].name}
-      </button>
-
-      <p/>
+      <QuizOption state={state} callback={handleNextEcgClick} ecgList={ecgList} choices={choices}></QuizOption>
       
+      <p/>
+
       {ecgIndex + 1} / {ecgList.length}
     </>
   );
+
+  
 }
 
 

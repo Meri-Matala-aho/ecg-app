@@ -58,6 +58,27 @@ export default function Gallery() {
     }
   }
 
+  function setPage(target) {
+    resetGraph();
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+
+    let t = target;
+    setEcgIndex(t);
+    setPageIndex(0);
+  }
+
+  const items = ecgList.filter(entry => entry.id > -1);
+
+  const listItems = items.map(entry =>
+    <li>
+      <button onClick={() => setPage(entry.id)} class="listButton">
+        {entry.name}
+      </button>
+    </li>
+  );
+
   return (
     <>
       <div class="galleryDiv">
@@ -84,9 +105,19 @@ export default function Gallery() {
         </div>
 
         <p/>
+
+ 
       </div>
 
+      <p/>
+      <p/>
 
+      <p>Sisällysluettelo</p>
+
+      <ul>{listItems}</ul>
+      <p/>
+      <p/>
+      <p/>
     </>
   );
 }
