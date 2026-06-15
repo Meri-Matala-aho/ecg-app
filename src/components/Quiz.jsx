@@ -20,7 +20,6 @@ export default function Quiz() {
   let wrongAnswers = [{}];
 
   
-
   const resetGraph = () => {
     setSeed(Math.random());
   };
