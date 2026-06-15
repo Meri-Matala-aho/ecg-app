@@ -18,6 +18,7 @@ export default function QuizOption({state, callback, ecgList, choices}) {
           {ecgList[choices[2]].name}
         </button>
       
+      
         <p/>
       </>
     );
