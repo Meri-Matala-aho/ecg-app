@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ecgList } from './quizData.js';
 import ImageGraph from './ImageGraph.jsx';
-import QuizOption from './quizOption.jsx';
+import QuizOption from './QuizOptions.jsx';
 
 
 export default function Quiz() {
