@@ -134,7 +134,7 @@ export const ecgList = [
   ]
 },
 {
-  name: 'VT',
+  name: 'Kammiotakykardia eli VT',
   pages: [
     { description: 'Kammiotakykardia eli VT määritellään leveäkomplesiseksi takykardiaksi, johon kuuluu vähintään kolme perättäistä kammiolyöntiä (VES), joiden taajuus on yli 120 kertaa minuutissa. Kammiotakykardiassa QRS-kompleksit ovat leveät ja niiden muoto on epänormaali, P-aaltoja on yleensä vaikea erottaa. Kammiotakykardioiden syntyalue on kammiolihaksessa. Erikoistapauksina voidaan pitää takykardioita, jotka syntyvät johtoradan kammionpuoleisella alueella.', },
     { heartRate: 120,
@@ -143,7 +143,7 @@ export const ecgList = [
   ]
 },
 {
-  name: 'VF',
+  name: 'Kammiovärinä eli VF',
   pages: [
     { description: 'Kammiovärinä eli VF on yleisin sydänpysähdyksen aiheuttava rytmihäiriö, jonka taajuus on 250 – 600 lyöntiä minuutissa. Kammiovärinä voidaankin määritellä tilaksi, jossa kammiolihaksen eri osat aktivoituvat toisistaan riippumatta. Kammiovärinässä sydämen sähköinen toiminta on täysin kaoottinen, joka näkyy EKG:ssä epäsäännöllisenä, kaoottisena ja epänormaaleina heilahduksina, joiden koko ja leveys vaihtelevat. Kammiovärinässä sydän lakkaa pumppaamasta verta noin 10 sekunnin kuluttua, jota seuraa kliininen sydämenpysähdys ja tajuttomuus.  ', },
     { description: 'Mikäli rytmihäiriötä ei saada käännettyä 3 – 5 minuutin kuluessa, potilas yleensä menehtyy. Ainoa tehokas hoito on synkronoimaton defibrillaatio 200 – 300 J. PPE:tä (painelu-puhalluselvytys) tulee jatkaa kunnes normaali rytmi on palautunut tai elvytys päätetään lopettaa tuloksettomana. Kammiovärinä liittyy yleensä sepelvaltimotautiin tai akuuttiin sydäninfarktiin sekä sen jälkitilaan. Myös rytmihäiriöt kuten kammiotiheälyöntisyys tai nopea eteisvärinä voivat johtaa kammiovärinään. ', },
@@ -153,7 +153,7 @@ export const ecgList = [
   ]
 },
 {
-  name: 'TDP',
+  name: 'Torsades de pointes (TDP)',
   pages: [
     { description: 'Kääntyvien kärkien kammiotakykardia on vaarallinen kammioperäinen rytmihäiriö, jossa kammioheilahduksen sähköinen akseli kiertää sukkulamaisesti lyönnistä toiseen. Kääntyvien kärkien kammiotakykardian muotoja ovat perinnöllinen sekä hankittu pitkä QT –oireyhtymä. Periytyvässä muodossa poikkeavuus on solutasolla, kun taas hankittu muoto voi johtua eri sairauksista, QT-aikaa pidentävästä lääkityksestä tai kaliumin ja magnesiumin puutteesta. EKS:ssä on pidentynyt QT-aika ja kääntyvien kärkien takykardia, joka voi vaihdella sinusrytmin kanssa edestakaisin.', },
     { description: 'Kammiolepatus on hyvin tiheä, eikä heilahduksissa erotu diastolevaihetta. Heilahdus voi harvoin olla myös yhdenmuotoinen. Kammion syketaajuus voi olla 150 – 230 lyöntiä minuutissa. Pitkittynyt takykardiakohtaus voi aiheuttaa tajuttomuuskohtauksen ja joskus johtaa jopa kammiovärinän kautta sydämenpysähdykseen. Potilas voi menehtyä, ellei hän pääse pikaisesti hoitoon.', },

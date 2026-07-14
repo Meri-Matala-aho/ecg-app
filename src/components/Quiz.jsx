@@ -18,7 +18,6 @@ export default function Quiz() {
   choices = [ecgIndex, ecgIndex + offset + 1, ecgIndex + offset + 2]
 
   let wrongAnswers = [{}];
-
   
   const resetGraph = () => {
     setSeed(Math.random());
