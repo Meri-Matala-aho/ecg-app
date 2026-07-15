@@ -7,6 +7,7 @@ import QuizOption from './QuizOptions.jsx';
 export default function Quiz() {
   const [ecgIndex, setEcgIndex] = useState(0);
   const [seed, setSeed] = useState(1);
+  const [isCorrect, setIsCorrect] = useState(false);
   let choices = [0, 1, 2];
 
   const [state, setState] = useState(0);
@@ -40,14 +41,17 @@ export default function Quiz() {
   let rightAnswer = "";
 
   if (state == 1) {
-    rightAnswer = "Oikea vastaus: " + ecg.name;
+    rightAnswer = isCorrect ? "Vastasit oikein." : "Vastauksesi on väärä. Oikea vastaus on: " + ecg.name;
   }
 
   function handleNextEcgClick(selected) {
 
-    // if (selected == 0) {
-    //   wrongAnswers.push(ecgList[ecgIndex]);
-    // }
+    if (selected == ecgIndex) {
+      setIsCorrect(true);
+    }
+    else {
+      setIsCorrect(false);
+    }
 
     if (state == 0) {
       setState(1);

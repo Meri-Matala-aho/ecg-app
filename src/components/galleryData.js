@@ -85,7 +85,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 8,
+  id: 10,
   name: 'Sinusrytmi',
   pages: [
     { description: 'EKG perustuu klassiseen elektrofysiologiaan, jonka kehitti Willem Einthoven 1924. \n\nSydämen normaalia rytmiä kutsutaan sinusrytmiksi. Normaali sydämen rytmi käynnistyy sinussolmukkeessa, josta sähköinen aktivaatio leviää eteisiin. Eteisten aktivoituessa EKG:ssä nähdään eteisaktivaatioita kuvaava P-aalto. Sinussolmuke on sydämen varsinainen tahdistaja, ja se sijaitsee oikean eteisen yläosassa takaseinämässä yläonttolaskimon suun läheisyydessä.\n\nKun sinussolmuke toimii normaalisti ja rytmi käynnistyy sieltä, puhutaan normaalirytmistä eli sinusrytmistä. Eteisten sähköistä aktivoitumista kutsutaan depolarisaatioksi, mikä käynnistää eteisten lihassolujen supistumisen. Tämän seurauksena molemmat eteiset supistuvat ja täyttävät kammiot ennen kammioiden supistumista.' },
@@ -106,7 +106,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 9,
+  id: 11,
   name: 'Sinusbradykardia',
   pages: [
     { description: 'Sinusbradykardia on sinusrytmi, jossa syketaajuus on alle 60 lyöntiä minuutissa. Eteisaktivaatio tapahtuu kuten normaalissa sinusrytmissä. P-aalto on normaalin muotoinen, edeltää jokaista QRS-kompleksia ja PQ-aika on vähintään 120 ms. Sinusbradykardia on tavallista unen aikana sekä henkilöillä, joilla vagaalinen tonus on suuri, kuten urheilijoilla ja terveillä nuorilla aikuisilla.' },
@@ -125,7 +125,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 10,
+  id: 12,
   name: 'Sinustakykardia',
   pages: [
     { description: 'Sinustakykardia on sinusrytmi, jossa syketiheys on yli 100 kertaa minuutissa.\nEteisaktivaatio tapahtuu kuten sinusrytmissä ja P-aallot ovat normaalit, myös PP-välit ovat yleensä säännölliset.\nP-aaltoja seuraa QRS-kompleksi ja P-aaltojen morfologia on normaali. P-aallon korkeus voi myös kasvaa sekä PR-väli voi lyhentyä  syketiheyden kasvaessa. '},
@@ -150,7 +150,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 12,
+  id: 14,
   name: 'Eteislisälyönnit eli SVES',
   pages: [
     {description: 'Eteislisälyönti eli Supraventrikulaarinen ExtraSystole (SVES), englanniksi premature atrial contraction (PAC) ) synnyttää impulssin, jonka varhaisin todettavissa oleva aktivaatio kohdistuu sydämen oikeaan tai vasempaan eteiseen.\n\nEteislisälyönti aktivoi ensin molemmat eteiset ja sen jälkeen eteis-kammiosolmukkeen sekä lopulta sydämen molemmat kammiot.\n\nAktivaation johtuminen eteisistä kammioihin edellyttää, että eteis-kammiosolmuke ja distaalinen johtorata eivät ole refraktaarisia eli kykenevät depolarisoitumaan. Johtuminen voi olla normaalia, hidastunutta tai sitten ei eteislisälyönti johdu ollenkaan kammioihin.'},
@@ -171,7 +171,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 13,
+  id: 15,
   name: 'Kammiolisälyönnit eli VES',
   pages: [
     { description: 'Kammiolisälyönneillä (VES) tarkoitetaan leveää QRS-kompleksia, joka on yli 120ms. On ennenaikainen, yleensä normaalia pidempikestoinen, muodoltaan terävä tai poikkeava ja jota ei edellä ennenaikainen P-aalto.\n\nYhdenmuotoinen kammiolisälyönti eli unifokaalinen kammiolisälyönti tulee aina samasta paikasta kammiota. Monimuotoinen eli multifokaalinen, sekä ennenaikaisuudeltaan vaihteleva kammiolisälyöntisyys syntyy todennäköisesti useassa eri paikkaa sydämessä.', },
@@ -196,7 +196,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 14,
+  id: 17,
   name: 'Sinusrytmi + VES (multifokaalinen)',
   pages: [
     { description: 'Kammiolisälyönneillä (VES) tarkoitetaan leveää QRS-kompleksia, joka on yli 120ms. On ennenaikainen, yleensä normaalia pidempikestoinen, muodoltaan terävä tai poikkeava ja jota ei edellä ennenaikainen P-aalto. Yhdenmuotoinen kammiolisälyönti eli unifokaalinen kammiolisälyönti tulee aina samasta paikasta kammiota. Monimuotoinen eli multifokaalinen, sekä ennenaikaisuudeltaan vaihteleva kammiolisälyöntisyys syntyy todennäköisesti useassa eri paikkaa sydämessä.', },
@@ -210,7 +210,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 15,
+  id: 18,
   name: 'Kupletti',
   pages: [
     { description: 'Kupletilla (couplet) tai lisälyöntipari tarkoitetaan tilaa, jossa kammiolisälyönnit esiintyvät pareittain.', },
@@ -224,7 +224,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 16,
+  id: 19,
   name: 'Tripletti',
   pages: [
     { description: 'Tripletillä taas tarkoitetaan kolmen lisälyönnin muodostamaa sarjaa.', },
@@ -238,7 +238,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 17,
+  id: 20,
   name: 'R-On-T',
   pages: [
     { description: 'Hyvin ennenaikaiset kammiolisälyönnit osuvat jo T-aallon päälle ja näitä kutsutaan ”R-On-T”-lisälyönneiksi. Kammiolisälyöntien varhaisuudella katsotaankin olevan yhteyttä niiden vaarallisuuteen.  Näitä pidetään lisälyönneistä vaarallisimpina, sillä ne saattavat joissain tilanteissa, kuten voimakkaassa iskemiassa käynnistää kammiotakykardian = VT tai kammiovärinän = VF.  Kaikki tällaiset lisälyönnit eivät ole vaarallisia varsinkaan terveessä sydämessä. ', },
@@ -249,7 +249,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 18,
+  id: 21,
   name: 'Bigemenia',
   pages: [
     { description: 'Bigemenialla tarkoitetaan tilaa, jossa jokaista normaalia sinussolmukkeen tahdittamaa kammioaktivaatiota seuraa kammiolisälyönti. Tällöin joka toinen kammiolyönti on lisälyönti.', },
@@ -268,7 +268,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 19,
+  id: 22,
   name: 'Trigemenia',
   pages: [
     { description: 'Trigemenialla tarkoitetaan rytmiä, jossa joka kolmas kammiolyönti on lisälyönti.', },
@@ -293,7 +293,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 21,
+  id: 24,
   name: 'Flimmeri',
   pages: [
     { description: 'Eteisvärinä (Flimmeri/FA) on yleisin rytmihäiriö yksittäisten lisälyöntien jälkeen. \n\nEteisvärinä aiheutuu kammioiden nopeasta sekä epäsäännöllisestä supistelusta. \n\nEteisvärinä on yleensä helposti tunnistettavissa EKG:ssä ja perusviiva on epätasainen eikä eteisaaltoja erotu. \n\nQRS-kompleksi on yleensä kapea ja niiden väli on epäsäännöllinen. QRS-kompleksin taajuus on yleensä nopeahko, noin 80 – 120 kertaa minuutissa. ', },
@@ -314,7 +314,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 22,
+  id: 25,
   name: 'Flutteri',
   pages: [
     { description: 'Eteislepatus (FLU/Flatteri) on eteisvärinän jälkeen tavallisin ja tärkein eteisperäinen rytmihäiriö. Useilla potilailla esiintyy eteislepatusta että eteisvärinää. Eteislepatus syntyy eteisperäisten lisälyöntien aiheuttamina, kuten eteisvärinässäkin. Eteislepatuksessa eteisten taajuus on rytmihäiriön aikana säännöllinen toisin kuin eteisvärinässä. Eteislepatuksen oireet ovat hyvin samanlaisia kuin eteisvärinässä. ', },
@@ -329,7 +329,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 23,
+  id: 26,
   name: 'SVT',
   pages: [
     { description: 'Supraventrikulaarinen takykardia eli SVT on rytmihäiriö, jossa sydämen rytmi on normaalia fysiologista sinusrytmiä nopeampi. SVT vaatii syntyäkseen tai pysyäkseen yllä sydämen eteisiä tai eteis-kammiosolmuketta tai niitä molempia. Tavallisimmin kohtaus alkaa äkillisesti ja myös loppuu melko äkkiä. SVT-kohtaus saattaa kestää lyhimmillään muutamia kymmeniä sekunteja ja pisimmillään tunteja tai päiviä. ', },
@@ -356,7 +356,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 24,
+  id: 28,
   name: 'Kammiotakykardia eli VT',
   pages: [
     { description: 'Kammiotakykardia eli VT määritellään leveäkomplesiseksi takykardiaksi, johon kuuluu vähintään kolme perättäistä kammiolyöntiä (VES), joiden taajuus on yli 120 kertaa minuutissa. Kammiotakykardiassa QRS-kompleksit ovat leveät ja niiden muoto on epänormaali, P-aaltoja on yleensä vaikea erottaa. Kammiotakykardioiden syntyalue on kammiolihaksessa. Erikoistapauksina voidaan pitää takykardioita, jotka syntyvät johtoradan kammionpuoleisella alueella.', },
@@ -376,7 +376,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 25,
+  id: 29,
   name: 'Kammiovärinä eli VF',
   pages: [
     { description: 'Kammiovärinä eli VF on yleisin sydänpysähdyksen aiheuttava rytmihäiriö, jonka taajuus on 250 – 600 lyöntiä minuutissa. Kammiovärinä voidaankin määritellä tilaksi, jossa kammiolihaksen eri osat aktivoituvat toisistaan riippumatta. Kammiovärinässä sydämen sähköinen toiminta on täysin kaoottinen, joka näkyy EKG:ssä epäsäännöllisenä, kaoottisena ja epänormaaleina heilahduksina, joiden koko ja leveys vaihtelevat. Kammiovärinässä sydän lakkaa pumppaamasta verta noin 10 sekunnin kuluttua, jota seuraa kliininen sydämenpysähdys ja tajuttomuus.  ', },
@@ -391,7 +391,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 26,
+  id: 30,
   name: 'Kääntyvien kärkien kammiotakykardia eli Torsades de pointes (TDP)',
   pages: [
     { description: 'Kääntyvien kärkien kammiotakykardia on vaarallinen kammioperäinen rytmihäiriö, jossa kammioheilahduksen sähköinen akseli kiertää sukkulamaisesti lyönnistä toiseen. Kääntyvien kärkien kammiotakykardian muotoja ovat perinnöllinen sekä hankittu pitkä QT –oireyhtymä. Periytyvässä muodossa poikkeavuus on solutasolla, kun taas hankittu muoto voi johtua eri sairauksista, QT-aikaa pidentävästä lääkityksestä tai kaliumin ja magnesiumin puutteesta. EKS:ssä on pidentynyt QT-aika ja kääntyvien kärkien takykardia, joka voi vaihdella sinusrytmin kanssa edestakaisin.', },
@@ -412,7 +412,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 28,
+  id: 32,
   name: 'Asystole eli ASY & sykevälikatkos',
   pages: [
     { description: 'Sydämenpysähdys ja hengityksen pysähtyminen johtavat hoitamattomina elimistön toiminnan palautumattomiin muutoksiin. Tällöin sydämen pumppaustoiminta lakkaa, verenkierto pysähtyy ja elimistöön syntyy hapenpuute. Hapenpuute vaikuttaa ensimmäisenä aivojen toimintaan ja tajuttomuus seuraa 10–15 sekunnin kuluessa. Jos aivojen verenkierto ei palaudu muutamassa minuutissa, alkaa kehittyä pysyviä muutoksia. ', },
@@ -427,7 +427,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 29,
+  id: 33,
   name: 'Agonaalinen rytmi',
   pages: [
     { description: 'Kuolemaa edeltävä rytmihäiriö,  joka on peräisin kammioiden alueelta. Hyvin hidas rytmi, alle 20-30 lyöntiä minuutissa, jopa 10-20 lyöntiä minuutissa. QRS-kompleksi matala ja leveä. Agonaalinen rytmi on merkki laajasta sydänlihaksen vauriosta, mikä johtaa sydänpysähdykseen (asystoleen).', },
@@ -441,7 +441,7 @@ export const ecgList = [
   ]
 },
 {
-  id: 30,
+  id: 34,
   name: 'PEA',
   pages: [
     { description: 'Sykkeetön rytmi, jossa sähköinen toiminta jatkuu, mutta mekaaninen supistus puuttuu, joten näin ollen tunnistettava pulssi puuttuu. QRS-heilahdukset usein leveitä ja epämuotoisia. Sydän ei pumppaa verta. On ei-defibrilloitava rytmi.', },
@@ -456,16 +456,21 @@ export const ecgList = [
     },
     { heartRate: 30,
       graph: path + '20_pea/graph.png',
-      description: '-Sykkeetön rytmi, jolloin pulssia ei tunnu\n-QRS-hei'
+      description: '-Sykkeetön rytmi, jolloin pulssia ei tunnu\n-QRS-heilahdukset ovat usein leveitä ja epämuotoisia\n-Syketaajuudeltaan yleensä harva, noin 25-50 krt/min.'
     }
   ]
 },
 {
-  id: 31,
-  name: 'Junktionaalinen rytmi',
+  name: 'Korvausrytmit',
   pages: [
-    { description: 'Korvausrytmit ovat sydämen turvaverkko, joten niiden toimintaa ei saa estää. Korvausrytmit kehittyvät katkoksen tai bradykardian vuoksi. Sydämessä on useita toissijaisia ektooppisia tahdistinalueita, jotka voivat tahdistaa sydämen toimintaa mikäli sen johtuminen tai syntyminen estyy jostain syystä.', },
-    { description: 'Jos junktioon ei SA-katkoksen tai sinuspysähdyksen vuoksi tule impulsseja, se alkaa tahdistaa sydämen toimintaa. Syntyvät QRS-kompleksit ovat muodoltaan samanlaisia kuin normaalistikin, mutta niiden taajuus on pienempi, noin 40 – 60 lyöntiä minuutissa. Junktionaaliselle rytmille on tyypillistä, että P-aallon sähköinen polariteetti kääntyy päinvastaiseen sinusrytmin P-aaltoon verrattuna. Invertoitunut P-aalto saattaa esiintyä QRS-kompleksin edellä, jäljessä tai siihen sulautuneena. ', },
+    { description: 'Korvausrytmit ovat sydämen turvaverkko, joten niiden toimintaa ei saa estää.\n\nKorvausrytmit kehittyvät katkoksen tai bradykardian vuoksi.\n\nSydämessä on useita toissijaisia ektooppisia tahdistinalueita, jotka voivat tahdistaa sydämen toimintaa mikäli sen johtuminen tai syntyminen estyy jostain syystä.' }
+  ]
+},
+{
+  id: 36,
+  name: 'Junktionaalinen rytmi eli nodaali rytmi',
+  pages: [
+    { description: 'Jos junktioon ei SA-katkoksen tai sinuspysähdyksen vuoksi tule impulsseja, se alkaa tahdistaa sydämen toimintaa.\n\nSyntyvät QRS-kompleksit ovat muodoltaan samanlaisia kuin normaalistikin, mutta niiden taajuus on pienempi, noin 40-60 lyöntiä minuutissa.\n\nJunktionaaliselle rytmille on tyypillistä, että P-aallon sähköinen polariteetti kääntyy päinvastaiseen sinusrytmin P-aaltoon verrattuna.\n\nInvertoitunut P-aalto saattaa esiintyä QRS-kompleksin edellä, jäljessä tai siihen sulautuneena. ', },
     { image: path + '21_junktionaalinen/1.png',
       description: '12-kytkentäinen EKG-tallenne'
     },
@@ -477,17 +482,19 @@ export const ecgList = [
     },
     { heartRate: 25,
       graph: path + '21_junktionaalinen/graph.png',
+      description: '-Invertoitunut P-aalto saattaa esiintyä QRS-heilahduksen edellä, jäljessä tai siihen sulautuneena\n-QRS-heilahdukset ovat muodoltaan samanlaisia kuin normaalisti, mutta niiden taajuus on pienempi, noin 40-60 krt/min.\n-Useimmiten säännöllinen rytmi'
     }
   ]
 },
 {
   name: 'Tahdistinrytmit',
   pages: [
+    {image: path + 't06_tahdistinrytmit/1.png' },
     {description: 'Tahdistimen perustehtävä on saada aikaan sydämen supistus, jos sitä ei tapahdu luonnollisesti.'}
   ]
 },
 {
-  id: 33,
+  id: 38,
   name: 'Eteistahdistus',
   pages: [
     { description: 'Tahdistimen perustehtävä on saada aikaan sydämen supistus, jos sitä ei tapahdu luonnollisesti. Eteistahdistin on nimensä mukaisesti eteisiä tahdistava ja tunnistava tahdistin. EKG:ssä tahdistimen antama jännitepiikki näkyy tahdistuspiikkinä ja sitä seuraa P-aalto. ', },
@@ -502,11 +509,12 @@ export const ecgList = [
     },
     { heartRate: 68,
       graph: path + '22_eteistahdistus/graph.png',
+      description: '-Tahdistimen antama jännitepiikki näkyy tahdistuspiikkinä ja sitä seuraa P-aalto'
     }
   ]
 },
 {
-  id: 34,
+  id: 39,
   name: 'Kammiotahdistus',
   pages: [
     { description: 'Kammiotahdistin tahdistaa ja tunnistaa vain kammioita. Kammiotahdistusta käytetään yleensä tilanteissa, joissa tahdistuksen tarve on hyvin vähäistä. Sydän toimii valtaosan ajasta normaalisti ja tahdistusta tarvitaan vain tarvittaessa hetkelliset estämään hidaslyöntisyyskohtaukset. Tahdistimen antama jännitepiikki näkyy EKG:ssä tahdistuspiikkinä ja sitä seuraa QRS-kompleksi.', },
@@ -521,11 +529,12 @@ export const ecgList = [
     },
     { heartRate: 76,
       graph: path + '23_kammiotahdistus/graph.png',
+      description: '-Tahdistimen antama jännitepiikki näkyy tahdistuspiikkinä ja sitä seuraa QRS-heilahdus'
     }
   ]
 },
 {
-  id: 35,
+  id: 40,
   name: 'Eteis-kammiotahdistus',
   pages: [
     { description: 'Eteis-kammiotahdistin tahdistaa ja tunnistaa nimensä mukaisesti eteisiä ja kammioita. Tätä kutsutaan myös fysiologiseksi tahdistimeksi. Eteis-kammiotahdistinta käytetään potilailla, joilla on eteis-kammiojohtumisen häiriö. Tahdistimen antama jännitepiikki näkyy EKG:ssä tahdistinpiikkinä ja sitä seuraa P-aalto ja QRS-kompleksi. ', },
@@ -540,12 +549,20 @@ export const ecgList = [
     },
     { heartRate: 63,
       graph: path + '24_eteis-kammiotahdistus/graph.png',
+      description: '-Tahdistimen antama jännitepiikki näkyy tahdistuspiikkinä ja sitä seuraa P-aalto ja QRS-heilahdus'
     }
   ]
 },
 {
-  id: 36,
-  name: 'I asteen AV-katkos',
+  name: 'Eteis-kammiojohtumisen häiriöt',
+  pages: [
+    { description: 'Sähköisen ärsykkeen johtuminen eteisistä kammioihin on poikkeavaa eteis-kammiosolmukkeen häiriöissä.\n\nJohtuminen on hidastunutta tai osa tai kaikki eteisistä tulevista sähköärsykkeistä jäävät johtumatta., joten nämä johtavat sydämen toiminnan taukoihin.' },
+    { description: 'Eteis-kammiokatkoksessa häiriö voi olla eteis-kammiosolmukkeessa, johtoradoissa tai Hisin kimpussa.\n\nEteis-kammiokatkokset luokitellaan kolmeen eri luokkaan niiden vakavuusasteen mukaan.\n\nEteis-kammiokatkos voi olla joko hankittu tai synnynnäinen. Sydänsairaudet kuten esimerkiksi iskeeminen sydänsairaus, akuutti sydäninfarkti, läppävika, reumasairaus ja sydänleikkauksen jälkitila voivat vaurioittaa eteis-kammiojohtumista.'}
+  ]
+},
+{
+  id: 42,
+  name: 'I asteen eteis-kammiokatkos',
   pages: [
     { description: 'Ensimmäisen asteen eteis-kammiokatkoksessa kaikki eteisaallot johtuvat kammioihin, mutta niiden herätteen kulku viivästyy eteis-kammiosolmukkeessa. Ensimmäisen asteen eteis-kammiokatkoksessa PQ-aika on yli 200ms. Joskus PQ-aika saattaa olla pidempi kuin PP-väli, jolloin kammioon johtunut P-aalto nähdään EKG:ssä ennen edeltävää QRS-heilahdusta.', },
     { description: 'QRS-heilahdus on tavallisesti normaalin muotoinen ja kapea. Mikäli QRS-heilahdus on leveä, haarakatkoksen tapainen, johtuminen on usein hidastunut Hisin kimpussa. Joten katkos voi olla osa muuta sydänsairautta. ', },
@@ -557,27 +574,33 @@ export const ecgList = [
     },
     { heartRate: 53,
       graph: path + '25_i-asteen_av-katkos/graph.png',
+      description: '-PQ-aika pitenee asteittain kunnes yksittäinen P-aalto jää johtumatta kammioihin'
     }
   ]
 },
 {
-  id: 37,
-  name: 'II asteen AV-katkos Mobitz 1',
+  id: 43,
+  name: 'II asteen AV-katkos',
   pages: [
-    { description: 'Toisen asteen eteis-kammiokatkoksessa vain osa eteisaalloista johtuu kammioihin. Katkos voi olla joko Mobitz 1- tai 2-tyyppinen. Molemmissa tapauksissa katkos on ajoittainen ja toistuva sekä se voi aiheuttaa useita peräkkäisiä johtumattomia P-aaltoja. Mobitz 1 –tyypin katkoksessa (Wenckebach-katkos) PQ-aika pitenee asteittain, kunnes yksi P-aalto jää johtumatta kammioihin. Johtumishäiriö on solmukkeessa, sen varsinaisessa runko-osasssa. Tämä katkos katsotaan hyvänlaatuiseksi ja se aiheuttaa harvoin vaikeita oireita. Mobitz 1 voi esiintyä sekä tervesydämisillä että sydänsairailla.', },
+    { description: 'Toisen asteen eteis-kammiokatkoksessa vain osa eteisaalloista johtuu kammioihin.\n\nKatkos voi olla joko Mobitz 1- tai 2-tyyppinen. Molemmissa tapauksissa katkos on ajoittainen ja toistuva sekä se voi aiheuttaa useita peräkkäisiä johtumattomia P-aaltoja.\n\nMobitz 1 –tyypin katkoksessa (Wenckebach-katkos) PQ-aika pitenee asteittain, kunnes yksi P-aalto jää johtumatta kammioihin. Johtumishäiriö on solmukkeessa, sen varsinaisessa runko-osasssa. Tämä katkos katsotaan hyvänlaatuiseksi ja se aiheuttaa harvoin vaikeita oireita. Mobitz 1 voi esiintyä sekä tervesydämisillä että sydänsairailla.', },
+    { description: 'Mobitz 2 -tyypin toisen asteen katkoksessa kaikki P-aallot eivät johdu kammioon. Tavallista on, että P-aallot tulevat säännöllisesti ja aina yhtä pitkä PQ-aika ennen kammioon johtumista.\n\nJohtumishäiriö paikantuu Hisin kimpun alkuosaan tai sen jälkeen. QRS-heilahdus on usein leveä ja se voi olla haarakatkoksen muotoinen. Mobitz 2 –katkos aiheuttaa hidaslyöntisyyttä, mutta syke on säännöllinen. Tämä tila ei parane itsestään ja se enteilee täydellistä eteis-kammiokatkosta.', },
+  ]
+},
+{
+  name: 'II asteen AV-katkos Mobitz 1 eli Wenckebach',
+  pages: [
     { image: path + '26_ii-asteen_av-katkos_mobitz_1/1.png',
       description: '12-kytkentäinen simulaatiomonitorin EKG-tallenne'
     },
     { heartRate: 64,
       graph: path + '26_ii-asteen_av-katkos_mobitz_1/graph.png',
+      description: '-Pidentynyt PQ-aika, yli 200 ms\n-QRS-heilahdus normaalin muotoinen ja kapea\n-Jokaista eteisaktivaatiota (P-aalto) seuraa kammioaktivaatio (QRS-kompleksi)'
     }
   ]
 },
 {
-  id: 38,
   name: 'II asteen AV-katkos Mobitz 2',
   pages: [
-    { description: 'Mobitz 2 –tyypin toisen asteen katkoksessa kaikki P-aallot eivät johdu kammioon. Tavallista on, että P-aallot tulevat säännöllisesti ja aina yhtä pitkä PQ-aika ennen kammioon johtumista.  Johtumishäiriö paikantuu Hisin kimpun alkuosaan tai sen jälkeen. QRS-heilahdus on usein leveä ja se voi olla haarakatkoksen muotoinen. Mobitz 2 –katkos aiheuttaa hidaslyöntisyyttä, mutta syke on säännöllinen. Tämä tila ei parane itsestään ja se enteilee täydellistä eteis-kammiokatkosta.', },
     { image: path + '27_ii-asteen_av-katkos_mobitz_2/1.png',
       description: '12-kytkentäinen EKG-tallenne'
     },
@@ -589,12 +612,13 @@ export const ecgList = [
     },
     { heartRate: 61,
       graph: path + '27_ii-asteen_av-katkos_mobitz_2/graph.png',
+      description: '-P-aallot tulevat säännöllisesti\n-Kaikki P-aallot eivät johdu kammioon\n-PQ-aika on aina yhtä pitkä ennen kammioon johtumista\n-QRS-heilahdus on usein leveä ja se voi olla haarakatkoksen muotoinen'
     }
   ]
 },
 {
-  id: 39,
-  name: 'III asteen AV-katkos',
+  id: 46,
+  name: 'III asteen eteis-kammiokatkos eli totaaliblokki',
   pages: [
     { description: 'Kolmannen asteen eteis-kammiokatkoksessa (totaaliblokissa) ei yksikään eteisaalto johdu kammioon. Kammioiden oma luontainen hidas tahdistusrytmi ylläpitää korvaavaa pumppaustoimintaa. Kolmannen asteen eteis-kammiokatkoksessa rytmi on tasainen ja syke voi olla niin alhainen, että se ei pysty ylläpitämään riittävää verenkiertoa. ', },
     { description: 'Kammioheilahdus on useimmiten leveä, sillä korvausrytmi syntyy kammiolihaksen alueella. Joskus korvausrytmi on kapea ja tällöin johtumishäiriön syntyalue sijaitsee lähellä Hisin kimppua. Kolmannen asteen eteis-kammiokatkos eli täydellinen eteis-kammiokatkos voi olla synnynnäinen tai hankittu. ', },
@@ -609,6 +633,7 @@ export const ecgList = [
     },
     { heartRate: 30,
       graph: path + '28_iii-asteen_av-katkos/graph.png',
+      description: '-Yksikään eteisaalto EI johdu kammioon\n-Rytmi on tasainen, syketaso tyypillisesti noin 30 krt/min. (ei riitä verenkierron ylläpitoon)\n-Kammioheilahdus on useimmiten leveä'
     }
   ]
 },
@@ -619,8 +644,8 @@ export const ecgList = [
   ]
 },
 {
-  id: 41,
-  name: 'RBBB',
+  id: 48,
+  name: 'Oikea haarakatkos eli RBBB',
   pages: [
     { description: 'Oikeassa haarakatkoksessa eli RBBB (Right bundle branch block) herätteen kulku katkeaa Hisin kimpun oikeassa haarassa.\n\nOikea kammio aktivoituu myöhästyneesti vasemman kammion aktivoitumisen seurauksena.\nNäin ollen syntyy oikealle haarakatkokselle ominainen R΄-aalto oikean puolen rintakytkentöihin.\n\nOikea haarakatkos on yleensä helppo tunnistaa.\nImpulssin kulku on estynyt Hisin kimpun oikeassa haarassa. seurauksena on QRS-kompleksin leventyminen (>0,12s).\n\nRBBB ei vaikeuta juurikaan infarktimuutosten havaitsemista EKG:ssä. ', },
     { image: path + '29_rbbb/1.png',
@@ -631,12 +656,13 @@ export const ecgList = [
     },
     { heartRate: 63,
       graph: path + '29_rbbb/graph.png',
+      description: "-Heilahduksen kesto yli 0,12s\n-V1-kytkennässä nähdään M-kirjainta muistuttava tyypillinen rsR' tai rSR' muoto\nV6 kytkennässä nähdään leveä S-aalto"
     }
   ]
 },
 {
-  id: 42,
-  name: 'LBBB',
+  id: 49,
+  name: 'Vasen haarakatkos eli LBBB',
   pages: [
     { description: 'Vasemman puolen johtoradan katkos eli LBBB (Left bundle branch block) on usein merkki alkavasta sydänlihasviasta, kuten esimerkiksi sepelvaltimotauti ja sydäninfarkti.\n\nMikäli sydänfilmissä todetaan vasen haarakatkos, niin tehdään muita sydäntutkimuksia mahdollisten sydänsairauksien löytämiseksi. ', },
     { description: 'Vasen haarakatkos syntyy, kun herätteen eteneminen pysähtyy Hisin kimpun vasemmassa päähaarassa tai sen kummassakin haarakkeessa.\n\nAkuutissa sydäninfarktissa alkunsa saanut vasen haarakatkos merkitsee isoa vauriota sydänlihaksessa sekä huonoa ennustetta.\n\nVasen haarakatkos voi vaikeuttaa vasemman kammion pumppaustoimintaa merkittävästi. ', },
@@ -649,6 +675,7 @@ export const ecgList = [
     },
     { heartRate: 60,
       graph: path + '30_lbbb/graph.png',
+      description: '-Heilahduksen kesto on yli 0,12s\n-V1 kytkennässä nähdään syvä rS tai QS\n-V6 kytkennässä muoto muistuttaa M-kirjainta'
     }
   ]
 },
@@ -660,10 +687,10 @@ export const ecgList = [
   ]
 },
 {
-  id: 44,
+  id: 51,
   name: 'ST-nousu ja sinusrytmi',
   pages: [
-    { description: 'EKG:ssä ST-taso nousee perusviivan (joko PR-välin tai TP-välin) yläpuolelle.\nST-tason nousua oltava vähintään kahdessa anatomisesti vierekkäisissä kytkennöissä (tavallisesti V2 ja V3 tai raajakytkennöissä). \nVähintään 1mm nousut muissa kytkennöissä.\nST-nousujen mittauskohta on 2-3 pikkuruutua S-aallon alusta T-aaltoon päin.\nST-taso on yleensä muodoltaan kaareva ja muistuttaa kirkon kattoa.\nST-nousuun liittyy tavallisesti vastakkaisia ST-tason laskuja muissa kytkennöissä.', },
+    { description: 'EKG:ssä ST-taso nousee perusviivan (joko PR-välin tai TP-välin) yläpuolelle.\nST-tason nousua oltava vähintään kahdessa anatomisesti vierekkäisissä kytkennöissä (tavallisesti V2 ja V3 tai raajakytkennöissä). \nVähintään 1mm nousut muissa kytkennöissä.\n\nST-nousujen mittauskohta on 2-3 pikkuruutua S-aallon alusta T-aaltoon päin.\nST-taso on yleensä muodoltaan kaareva ja muistuttaa kirkon kattoa.\nST-nousuun liittyy tavallisesti vastakkaisia ST-tason laskuja muissa kytkennöissä.', },
     { image: path + '31_st-nousu/1.png',
       description: '12-kytkentäinen EKG-tallenne'
     },
@@ -675,43 +702,40 @@ export const ecgList = [
     },
     { heartRate: 74,
       graph: path + '31_st-nousu/graph.png',
+      description: '-ST-taso nousee perusviivasta\n-T-aallon muutokset\n-QRS-heilahdusten muutokset'
     }
   ]
 },
 {
-  id: 45,
-  name: 'Sinus + ST-tason lasku',
+  id: 52,
+  name: 'ST-lasku ja sinusrytmi',
   pages: [
     { image: path + '32_st-lasku/1.png',
       description: 'EKG:ssä ST-taso painuu perusviivan alle.\n\nST-laskujen syvyys ja laajuus viittaavat vakavaan hapenpuutteeseen sydämessä.\n\nUusi ja yli 0,5 mm:n suuruinen ST-lasku (J-pisteestä mitattuna) kahdessa rinnakkaisessa kytkennässä määritellään ST-tason laskuksi.',
     },
-    { image: path + '31_st-lasku/2.png',
+    { image: path + '32_st-lasku/2.png',
       description: '12-kytkentäinen EKG-tallenne'
     },
-    { image: path + '31_st-lasku/3.png',
+    { image: path + '32_st-lasku/3.png',
       description: '12-kytkentäinen EKG-tallenne'
     },
-    { image: path + '31_st-lasku/4.png',
+    { image: path + '32_st-lasku/4.png',
       description: '12-kytkentäinen EKG-tallenne'
     },
     { heartRate: 77,
       graph: path + '32_st-lasku/graph.png',
+      description: '-ST-taso laskee perusviivasta\n-QRS-heilahduksen muutokset'
     }
   ]
 },
 {
-  id: 46,
+  id: 53,
   name: 'T-inversio',
   pages: [
-    { description: 'T-inversiolla tarkoitetaan T-aallon kääntymistä alaspäin eli T-aalto muuttuu negatiiviseksi.\nT-aalto kuvaa sydämen kammioiden palautumisvaihetta.\nTavallisesti T-inversio näkyy kytkennöissä V4-V6 tai raajakytkennöissä ja sitä tulkittaessa tarkastellaan rinnakkaisia kytkentöjä.\nNegatiivinen T-aalto voi olla matala tai syvä.', },
+    { image: path + '33_t-inversio/0.png',
+      description: 'T-inversiolla tarkoitetaan T-aallon kääntymistä alaspäin eli T-aalto muuttuu negatiiviseksi.\nT-aalto kuvaa sydämen kammioiden palautumisvaihetta.\nTavallisesti T-inversio näkyy kytkennöissä V4-V6 tai raajakytkennöissä ja sitä tulkittaessa tarkastellaan rinnakkaisia kytkentöjä.\nNegatiivinen T-aalto voi olla matala tai syvä.', },
     { image: path + '33_t-inversio/1.png',
-      description: '12-kytkentäinen EKG-tallenne'
-    },
-    { image: path + '33_t-inversio/2.png',
-      description: '12-kytkentäinen EKG-tallenne'
-    },
-    { image: path + '33_t-inversio/3.png',
-      description: '12-kytkentäinen EKG-tallenne'
+      description: 'EKG-tallenne potilasmonitorilta'
     },
     { heartRate: 65,
       graph: path + '33_t-inversio/graph.png',
@@ -719,6 +743,7 @@ export const ecgList = [
   ]
 },
 {
+  id: 54,
   name: 'Testaa EKG:n tulkintataitosi',
   pages: [
     { button: '' }

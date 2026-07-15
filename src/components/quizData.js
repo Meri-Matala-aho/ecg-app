@@ -228,7 +228,7 @@ export const ecgList = [
   ]
 },
 {
-  name: 'I asteen AV-katkos',
+  name: 'I asteen eteis-kammiokatkos',
   pages: [
     { description: 'Ensimmäisen asteen eteis-kammiokatkoksessa kaikki eteisaallot johtuvat kammioihin, mutta niiden herätteen kulku viivästyy eteis-kammiosolmukkeessa. Ensimmäisen asteen eteis-kammiokatkoksessa PQ-aika on yli 200ms. Joskus PQ-aika saattaa olla pidempi kuin PP-väli, jolloin kammioon johtunut P-aalto nähdään EKG:ssä ennen edeltävää QRS-heilahdusta.', },
     { description: 'QRS-heilahdus on tavallisesti normaalin muotoinen ja kapea. Mikäli QRS-heilahdus on leveä, haarakatkoksen tapainen, johtuminen on usein hidastunut Hisin kimpussa. Joten katkos voi olla osa muuta sydänsairautta. ', },
@@ -238,7 +238,7 @@ export const ecgList = [
   ]
 },
 {
-  name: 'II asteen AV-katkos Mobitz 1',
+  name: 'II asteen eteis-kammiokatkos Mobitz 1',
   pages: [
     { description: 'Toisen asteen eteis-kammiokatkoksessa vain osa eteisaalloista johtuu kammioihin. Katkos voi olla joko Mobitz 1- tai 2-tyyppinen. Molemmissa tapauksissa katkos on ajoittainen ja toistuva sekä se voi aiheuttaa useita peräkkäisiä johtumattomia P-aaltoja. Mobitz 1 –tyypin katkoksessa (Wenckebach-katkos) PQ-aika pitenee asteittain, kunnes yksi P-aalto jää johtumatta kammioihin. Johtumishäiriö on solmukkeessa, sen varsinaisessa runko-osasssa. Tämä katkos katsotaan hyvänlaatuiseksi ja se aiheuttaa harvoin vaikeita oireita. Mobitz 1 voi esiintyä sekä tervesydämisillä että sydänsairailla.', },
     { heartRate: 64,
@@ -247,7 +247,7 @@ export const ecgList = [
   ]
 },
 {
-  name: 'II asteen AV-katkos Mobitz 2',
+  name: 'II asteen eteis-kammiokatkos Mobitz 2',
   pages: [
     { description: 'Mobitz 2 –tyypin toisen asteen katkoksessa kaikki P-aallot eivät johdu kammioon. Tavallista on, että P-aallot tulevat säännöllisesti ja aina yhtä pitkä PQ-aika ennen kammioon johtumista.  Johtumishäiriö paikantuu Hisin kimpun alkuosaan tai sen jälkeen. QRS-heilahdus on usein leveä ja se voi olla haarakatkoksen muotoinen. Mobitz 2 –katkos aiheuttaa hidaslyöntisyyttä, mutta syke on säännöllinen. Tämä tila ei parane itsestään ja se enteilee täydellistä eteis-kammiokatkosta.', },
     { heartRate: 61,
@@ -256,7 +256,7 @@ export const ecgList = [
   ]
 },
 {
-  name: 'III asteen AV-katkos',
+  name: 'III asteen eteis-kammiokatkos',
   pages: [
     { description: 'Kolmannen asteen eteis-kammiokatkoksessa (totaaliblokissa) ei yksikään eteisaalto johdu kammioon. Kammioiden oma luontainen hidas tahdistusrytmi ylläpitää korvaavaa pumppaustoimintaa. Kolmannen asteen eteis-kammiokatkoksessa rytmi on tasainen ja syke voi olla niin alhainen, että se ei pysty ylläpitämään riittävää verenkiertoa. ', },
     { description: 'Kammioheilahdus on useimmiten levä, sillä korvausrytmi syntyy kammiolihaksen alueella. Joskus korvausrytmi on kapea ja tällöin johtumishäiriön syntyalue sijaitsee lähellä Hisin kimppua. Kolmannen asteen eteis-kammiokatkos eli täydellinen eteis-kammiokatkos voi olla synnynnäinen tai hankittu. ', },
