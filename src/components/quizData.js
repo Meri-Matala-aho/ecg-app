@@ -119,7 +119,7 @@ export const ecgList = [
     { description: 'Eteislepatus (FLU/Flatteri) on eteisvärinän jälkeen tavallisin ja tärkein eteisperäinen rytmihäiriö. Useilla potilailla esiintyy eteislepatusta että eteisvärinää. Eteislepatus syntyy eteisperäisten lisälyöntien aiheuttamina, kuten eteisvärinässäkin. Eteislepatuksessa eteisten taajuus on rytmihäiriön aikana säännöllinen toisin kuin eteisvärinässä. Eteislepatuksen oireet ovat hyvin samanlaisia kuin eteisvärinässä. ', },
     { description: 'Tyypillisen eteislepatuksen tunnistaa EKG:stä alaseinäkytkennöissä II, III ja aVF näkyvästä säännöllisestä sekä sahalaitamaisesta F-aallosta (”flutter wave”). Kammiovaste on useimmiten säännöllinen 80 – 170 kertaa minuutissa. Eteislepatus liittyy eriasteiseen sydämen vajaatoimintaan kammiovasteesta riippuen.', },
     { heartRate: 76,
-      graph: path + '13_flutteri/graph.png',
+      graph: path + '13_flutteri/graph_noDescription.png',
     }
   ]
 },

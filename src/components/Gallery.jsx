@@ -112,7 +112,7 @@ export default function Gallery() {
       <p/>
       <p/>
 
-      <p>Sisällysluettelo</p>
+     
 
       <ul>{listItems}</ul>
       <p/>

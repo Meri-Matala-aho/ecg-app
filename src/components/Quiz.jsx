@@ -17,6 +17,7 @@ export default function Quiz() {
 
   let offset = ecgIndex + 5 < ecgList.length - 1 ? 0 : -10;
   choices = [ecgIndex, ecgIndex + offset + 1, ecgIndex + offset + 2]
+  shuffleArray(choices);
 
   let wrongAnswers = [{}];
   
@@ -57,12 +58,12 @@ export default function Quiz() {
       setState(1);
     }
     else {
-      shuffleArray(choices);
       resetGraph();
       let target;
       target = hasNext ? ecgIndex + 1 : 0;
       setState(0);
       setEcgIndex(target);
+      
     }
 
 
@@ -78,6 +79,7 @@ export default function Quiz() {
 
   useEffect(() => {
     shuffleArray(ecgList);
+    resetGraph();
   }, []);
 
   const listItems = wrongAnswers.map(entry =>

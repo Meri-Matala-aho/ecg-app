@@ -55,7 +55,7 @@ export default function ImageGraph({ data }) {
       graph.w = canvasHeight / 1.5;
       graph.h = canvasHeight / 2;
 
-      let heartRateRatio = 60 / data.heartRate
+      let heartRateRatio = data.heartRate != 0 ? 60 / data.heartRate : 1;
       graph.w *= heartRateRatio;
 
       startPoint = {
@@ -73,7 +73,7 @@ export default function ImageGraph({ data }) {
       dividerEnd = graph.w * mult;
 
       p5i.frameRate(60);
-      speed = 0.001 * graph.w * (data.heartRate / 60);
+      speed = 0.4;
       animProgress = dividerStart;
 
       // initial draw to prevent flicker on resize
