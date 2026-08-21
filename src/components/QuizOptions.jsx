@@ -1,4 +1,4 @@
-export default function QuizOption({state, callback, ecgList, choices, restart}) {
+export default function QuizOption({state, callback, ecgList, choices, label}) {
   if (state == 0) {
     return (
       <>
@@ -26,7 +26,7 @@ export default function QuizOption({state, callback, ecgList, choices, restart})
   else {
     return (
       <button onClick={() => callback(choices[0])} class="button">
-          {restart ? 'Aloita alusta' : 'Seuraava'}
+          {label}
       </button>
     );
   }
