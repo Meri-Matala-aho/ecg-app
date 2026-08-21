@@ -8,12 +8,14 @@ export default function Quiz() {
   const [ecgIndex, setEcgIndex] = useState(0);
   const [seed, setSeed] = useState(1);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [score, setScore] = useState(0);
   let choices = [0, 1, 2];
 
   const [state, setState] = useState(0);
 
   const hasNext = ecgIndex < ecgList.length - 1;
   const hasPrevious = ecgIndex > 0;
+  const isFinished = state == 1 && !hasNext;
 
   let offset = ecgIndex + 5 < ecgList.length - 1 ? 0 : -10;
   choices = [ecgIndex, ecgIndex + offset + 1, ecgIndex + offset + 2]
@@ -47,26 +49,28 @@ export default function Quiz() {
 
   function handleNextEcgClick(selected) {
 
-    if (selected == ecgIndex) {
-      setIsCorrect(true);
-    }
-    else {
-      setIsCorrect(false);
-    }
-
     if (state == 0) {
+      const correct = selected == ecgIndex;
+      setIsCorrect(correct);
+      if (correct) {
+        setScore(score + 1);
+      }
       setState(1);
     }
-    else {
+    else if (hasNext) {
       resetGraph();
-      let target;
-      target = hasNext ? ecgIndex + 1 : 0;
       setState(0);
-      setEcgIndex(target);
-      
+      setEcgIndex(ecgIndex + 1);
     }
-
-
+    else {
+      // restart the quiz
+      shuffleArray(ecgList);
+      resetGraph();
+      setScore(0);
+      setIsCorrect(false);
+      setState(0);
+      setEcgIndex(0);
+    }
   }
 
   // function handlePreviousEcgClick() {
@@ -109,13 +113,15 @@ export default function Quiz() {
 
         <p>{rightAnswer}</p>
 
+        {isFinished && <p>{score}/{ecgList.length} p.</p>}
+
         <p/>
       </div>
-      
+
       <p/>
 
-      
-      <QuizOption state={state} callback={handleNextEcgClick} ecgList={ecgList} choices={choices}></QuizOption>
+
+      <QuizOption state={state} callback={handleNextEcgClick} ecgList={ecgList} choices={choices} restart={isFinished}></QuizOption>
       
       <p/>
 
